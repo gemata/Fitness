@@ -42,31 +42,28 @@ form.addEventListener('submit',function(e){
         showSuccess(username);
     }
     if(email.value===''){
-        showError(email,'Adresa Elektronike është e nevojshme');
+        showError(email,'Email është i nevojshëm');
     }else if(!isValidEmail(email.value)){
-        showError(email,'Adresa Elektronike nuk është valide');
+        showError(email,'Email nuk është valid');
     }
     else{
         showSuccess(email);
     }
 
     if(password.value.length <6){
-        showError(password,'Fjalëkalimi duhet pasur së paku 6 karaktere');
+        showError(password,'Duhet pasur së paku 6 karaktere');
         
     }
     else{
         showSuccess(password);
     }
     if(password2.value===''){
-        showError(password2,'Konfimimi i fjalëkalimit është i nevojshëm');
+        showError(password2,'Konfimimi është i nevojshëm');
     } else if (password2.value !==  password.value) {
         showError(password2, "Fjalkalimet nuk përputhen");
     }else{
         showSuccess(password2);
     }
-    
-     
-    
 }
 );
 
