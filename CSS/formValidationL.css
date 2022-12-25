@@ -30,9 +30,15 @@ body {
 
 
 #form h1 {
-    color: #0f2027;
+    color: var(--main-color);
     text-align: center;
 
+}
+#ep{
+    color: #777;
+}
+#f{
+    color: #777;
 }
 
 #signUpButton{
@@ -66,10 +72,12 @@ body {
     outline: 0;
 }
 
-.input-control.succes input {
-    border-color: #09c372;
 
+.input-control.error {
+    color: var(--error-color);
 }
+
+
 
 .input-control.error input {
     border-color: #ff3860;
