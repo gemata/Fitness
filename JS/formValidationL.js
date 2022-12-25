@@ -45,7 +45,7 @@ if(usernameValue === '') {
 
 
 if(passwordValue.length < 6) {
-    setError(password, 'Fjalëkalimi duhet pasur së paku 6 karaktere')
+    setError(password, 'Duhet pasur së paku 6 karaktere')
 
 } else {
     setSuccess(password);
