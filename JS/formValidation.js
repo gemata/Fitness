@@ -50,8 +50,9 @@ form.addEventListener('submit',function(e){
         showSuccess(email);
     }
 
-    if(password.value===''){
-        showError(password,'Fjalëkalimi është i nevojshëm');
+    if(password.value.length <6){
+        showError(password,'Fjalëkalimi duhet pasur së paku 6 karaktere');
+        
     }
     else{
         showSuccess(password);
@@ -62,8 +63,8 @@ form.addEventListener('submit',function(e){
         showError(password2, "Fjalkalimet nuk përputhen");
     }else{
         showSuccess(password2);
-        alert("Regjistrimi u krye me sukses");
     }
+    
      
     
 }
