@@ -3,6 +3,10 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
+
+
+
+
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
@@ -134,3 +138,20 @@ var swiper = new Swiper(".blogs-slider", {
       },
     
   });
+
+  
+
+
+  async function contactScroll() {
+
+    console.log("p");
+
+        window.scrollTo({top: 0, behavior: 'smooth'});            
+        await new Promise(r => setTimeout(r, 1000));
+        window.scrollTo(0, document.body.scrollHeight);
+
+};
+
+if (performance.navigation.type == 1) {
+    window.location.href= 'file:///C:/Users/blepo/OneDrive/Documents/GitHub/Fitness/index.html';
+};

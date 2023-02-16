@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url('r-2.jpg');
+    background: url('r-2.webp');
     background-size: cover !important;
     font-family:'Open Sans',sans-serif;
     display: flex;
@@ -39,8 +39,8 @@ h2{
 }
 .form-control{
 
-    margin-bottom: 10px;
-    padding-bottom: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
     position: relative;
 }
 .form-control label{
@@ -54,7 +54,7 @@ h2{
     border-radius: 4px;
     width: 100%;
     padding: 10px;
-    font-size: 14px;
+    font-size: .75rem;
 
 }
 .form-control input:focus{
@@ -71,9 +71,10 @@ h2{
 }
 
 .form-control small{
+    font-size: 11px;
     color:var(--main-color);
     position: absolute;
-    bottom: 0;
+    bottom: -12.7px;
     left: 0;
     visibility: hidden;
 }
